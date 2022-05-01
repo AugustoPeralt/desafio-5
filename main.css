@@ -1,0 +1,723 @@
+*{
+   margin: 0;
+   padding: 0;
+ 
+}
+
+.nav-responsive-ul {
+   display: none;
+}
+
+/*---IGUAL EN TODOS--*/
+
+
+
+ nav{
+   background-color: rgb(121, 65, 65);
+   padding:5px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   grid-area: nav;
+
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Kalam', cursive;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+nav ul li a:hover{
+   color: #fff;
+}
+
+nav img{
+   border-radius: 10px;
+}
+
+a{
+   text-decoration: none;
+   color: rgb(15, 15, 15);
+}
+
+footer {
+
+   display: -webkit- flex;  
+   display: moz- flex;
+   display: ms- flex;
+   display: -o- flex;
+   display: flex;
+   flex-flow: row wrap;
+   padding: 50px;
+   color:#fff;
+   background-color:  #011c39 ;
+  
+ }
+ 
+ .footer > *{
+    flex: 1 100%;
+    grid-area: footer;
+ }
+ 
+ .productoss, .noticiass, .adress{
+    font-weight: 600;
+    font-size: 17px;
+ }
+ 
+ .footer ul{
+    list-style: none;
+    padding-left: 0;
+ }
+ 
+ .footer li{
+    line-height: 2em;
+ }
+ 
+ .footer a{
+    text-decoration: none;
+ }
+ 
+ footer a:hover{
+ color: #fff;
+ }
+ 
+ .footer-der{
+    display: -webkit- flex;  
+   display: moz- flex;
+   display: ms- flex;
+   display: -o- flex;
+   display: flex;
+   flex-flow: row wrap;
+ }
+ 
+ .footer-der > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+ }
+ 
+ .box a{
+    color:  rgb(158, 151, 151);
+ }
+ 
+ .footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+ }
+ 
+ 
+ .redes a{
+    background-color: #364a62;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+ }
+ 
+ .redes a i{
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 20px;
+ }
+ 
+ 
+ @media screen and (min-width:600px){
+    .footer-der > * {
+       flex: 1;
+    }
+  
+    .footer-der{
+       flex: 2 0px;
+    }
+ }
+ /*---IGUAL EN TODOS--*/
+
+
+
+
+/*---ESTILADO DEL INDEX*/
+
+
+.cabeza div{
+   color: rgb(7, 7, 7);
+   font-family: 'Kalam', cursive;
+   text-align: center;
+}
+   
+
+
+.cabeza{
+    background-image: url("imagenes/mountains-g7954cb971_640.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.contenedor{
+    width:100%;
+   
+    display:flex;
+    background-color: #6a6a6a;
+    
+  
+  }
+  .card{
+     width: 400px;
+     margin: 40px;
+     border-radius: 6px;
+     overflow: hidden;
+     background: #fff;
+     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+     cursor: default;
+     transition: all 400ms ease;
+  }
+
+  .card:hover{
+     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+     transform: translateY(-3%);
+  }
+
+.card img{
+   width: 100%;
+   height: 100%;
+
+}
+
+.card .contenido{
+   padding: 15px;
+   text-align: center;
+
+}
+
+.card .contenido p{
+   line-height: 1.5;
+   color: #6a6a6a;
+   padding: 10px;
+}
+
+.card .contenido a{
+   text-decoration: none;
+   display: inline-block;
+   padding: 10px;
+   margin-top: 10px;
+   color: #2fb4cc;
+   border: 1px solid #2fb4cc;
+   border-radius: 4px;
+   transition: all 400ms ease;
+}
+.card.contenido a:hover{
+   background: #2fb4cc;
+   color: #fff;
+}
+/*----FIN DEL ESTILADO DEL INDEX*/
+
+
+/*----COMIENZO DE ESTILADO DE NOTICIAS.HTML----*/
+
+
+span{
+   color: red;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulito{
+   background-color: #f7e1e1;
+   display: flex;
+   justify-content: center;
+   padding-top: 40px;
+}
+
+
+
+.cabecera{
+   background-color: #f7e1e1;
+   padding: 15px;
+   height: 450px;
+   width: 100%;
+  
+}
+
+
+
+.estrenos{
+   background-color: #d8d8d8;
+   display: flex;
+   width: 100%;
+   height: 400px;
+}
+
+.lanzamientos{
+   font-family: 'Kalam', cursive;
+   padding: 15px;
+}
+
+
+table{
+   background-color: #ffffff;
+   text-align: left;
+   width: 500px;  
+   border-collapse: collapse;
+   height: 200px;
+}
+th td{
+   padding: 20px;
+}
+
+thead{
+   background-color: #246355;
+   border-bottom: solid 5px #0f362d;
+   color: #fff;
+}
+tr:nth-child(even){
+   background-color: #dbdbdb;
+}
+
+tr:hover{
+   background-color: #369681;
+   color: white;
+}
+
+
+/*----FINALIZACION DEL ESTILADO DE NOTICIAS.HTML----*/
+
+
+
+header{
+   width: 100%;
+   background-color: #d8d8d8;
+
+   grid-area: header;
+   grid-gap: 200px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+main{
+   width: 100%;
+   padding-top: 100px;
+
+   grid-area: main;
+   grid-gap: 200px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+
+}
+
+/*----ESTILADO DE HOODIES.HTML----*/
+
+.hoodies{
+   background-color: #d8d8d8;
+   
+   display: grid;
+   grid-gap: 100px;
+   grid-template-areas: 
+   "nav"
+   "header"
+   "main"
+   "footer";
+
+   display: flex;
+   flex-wrap: wrap;
+
+   padding-bottom: 60px;
+}
+
+.hoodies img{
+   width: 300px;
+   height: 400px;
+  
+}
+
+.hoodies h3{
+   max-width: 300px;
+ 
+   display: flex;
+   text-align: left;
+   justify-content: left;
+  
+ 
+ }
+
+ /*FINALIZACION DEL ESTILADO DE HOODIES.HTML*/
+
+
+
+/*COMIENZO DE ESTILADO DE JOGGINS.HTML*/
+
+.joggins{
+   background-color: #d8d8d8;
+   
+   display: grid;
+   grid-gap: 100px;
+   grid-template-areas: 
+   "nav"
+   "header"
+   "main"
+   "footer";
+
+   display: flex;
+   flex-wrap: wrap;
+
+   padding-bottom: 60px;
+}
+
+.joggins img{
+   width: 300px;
+   height: 400px;
+   
+}
+
+.joggins h3{
+   max-width: 300px;
+ 
+   display: flex;
+   text-align: left;
+   justify-content: left;
+  
+}
+
+
+/*FINALIZACION DEL ESTILADO DE JOGGINS.HTML*/
+
+
+
+/*COMIENZO DE ESTILADO DE REMERAS.HTML*/
+
+.remeras{
+   background-color: #d8d8d8;
+   
+   display: grid;
+   grid-gap: 100px;
+   grid-template-areas: 
+   "nav"
+   "header"
+   "main"
+   "footer";
+
+   display: flex;
+   flex-wrap: wrap;
+
+   padding-bottom: 60px;
+}
+
+.remeras img{
+   width: 300px;
+   height: 400px;
+   
+}
+ 
+ .remeras h3{
+   max-width: 300px;
+ 
+   display: flex;
+   text-align: left;
+   justify-content: left;
+  
+ 
+ }
+ 
+
+ 
+/*FINALIZACION DEL ESTILADO DE REMERAS.HTML*/
+
+
+@media screen and (max-width: 320px){
+   .cabeza{
+      background-image: url("imagenes/mountains-g7954cb971_640.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      height: 100px;
+      width: 100%;
+   }
+   
+
+   .contenedor{
+      display: flex;
+      flex-wrap: wrap;
+   }
+  
+   
+   .titulito {
+      background-color: #f7e1e1;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      
+   }
+   
+   .cabecera{
+      background-color: #f7e1e1;
+      padding: 5px;
+      text-align: left;
+      width: 100%;
+      
+   }
+   
+   
+   
+   .texto{
+      padding: 20px;
+      
+      margin: 10px;
+      display: block;
+      font-size: 10px;
+     
+   }
+   
+  aside{
+     display: none;
+  }
+
+   
+   div img{
+      width: 100%;
+      height: 200px;
+   }
+
+   .hoodies{
+      display: flex;
+      justify-content: center;
+
+   }
+
+   .hoodies h3{
+      max-width: 100px;
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+    
+    }
+   
+    .joggins img{
+      width: 200px;
+      height: 300px;
+     
+   }
+   
+   .joggins{
+   
+    display: grid;
+    grid-template-rows: max-content ;
+    
+    padding: 5px;
+    
+   }
+   
+   .joggins h3{
+      max-width: 300px;
+      display: flex;
+      justify-content: left;
+    
+     text-align: left;
+    }
+   
+    .remeras img{
+      width: 200px;
+      height: 300px;
+     
+   }
+   
+   .remeras{
+   
+    display: grid;
+    grid-template-rows: max-content ;
+    
+    padding: 5px;
+    
+   }
+   
+   .remeras h3{
+      max-width: 300px;
+      display: flex;
+      justify-content: left;
+    
+     text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px){
+   
+   nav{
+      padding:5px;
+      background-color: rgb(121, 65, 65);
+      width: 100%;
+      height: 100px;
+      align-items: center;
+      grid-area: nav;
+      display: flex;
+      justify-content: center;
+  }
+
+  nav img{
+   display: none;
+}
+
+.cabeza{
+   background-image: url("imagenes/mountains-g7954cb971_640.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 15px;
+   height: 300px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   
+}
+
+.contenedor{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.titulito{
+   background-color: #f7e1e1;
+   display: flex;
+   justify-content: center;
+}
+
+.cabecera{
+   background-color: #f7e1e1;
+   padding: 5px;
+   height: 300px;
+   width: 100%;
+   
+}
+
+
+
+.texto{
+   padding: 30px;
+   margin: 10px;
+   display: block;
+   font-size: 10px;
+}
+
+
+
+.estrenos{
+   background-color: #d8d8d8;
+   display: block;
+   padding: 30px;
+   width: 100%;
+   height: 400px;
+}
+
+.lanzamientos{
+   font-family: 'Kalam', cursive;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+}
+
+
+table{
+   background-color: #ffffff;
+   text-align: left;
+   width: 500px;  
+   border-collapse: collapse;
+   height: 200px;
+}
+th td{
+   padding: 20px;
+}
+
+thead{
+   background-color: #246355;
+   border-bottom: solid 5px #0f362d;
+   color: #fff;
+}
+
+
+.hoodies img{
+   width: 200px;
+   height: 300px;
+  
+}
+
+.hoodies{
+
+ display: grid;
+ grid-template-rows: max-content ;
+ padding: 5px;
+}
+
+.hoodies h3{
+   max-width: 300px;
+   display: flex;
+   justify-content: right;
+ 
+  text-align: left;
+ }
+
+ .joggins img{
+   width: 200px;
+   height: 300px;
+  
+}
+
+.joggins{
+
+ display: grid;
+ grid-template-rows: max-content ;
+ 
+ padding: 5px;
+ 
+}
+
+.joggins h3{
+   max-width: 300px;
+   display: flex;
+   justify-content: left;
+ 
+  text-align: left;
+ }
+
+ .remeras img{
+   width: 200px;
+   height: 300px;
+  
+}
+
+.remeras{
+
+ display: grid;
+ grid-template-rows: max-content ;
+ 
+ padding: 5px;
+ 
+}
+
+.remeras h3{
+   max-width: 300px;
+   display: flex;
+   justify-content: left;
+ 
+  text-align: left;
+ }
+}

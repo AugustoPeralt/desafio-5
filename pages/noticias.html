@@ -8,7 +8,7 @@
     <title>noticias</title>
     <link rel="stylesheet" href="../main.css">
     <script src="https://kit.fontawesome.com/2b13fecf5c.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo agrandado.jpeg">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/logo agrandado.jpeg">
 </head>
 
 <body>
@@ -66,23 +66,37 @@
     </header>
 
     <main class="estrenos">
-        <h2 class="lanzamientos">Estrenos</h2>
         <div class="main-container">
-            <table>
+            <table class="table">
+                <caption>estrenos</caption>
                 <thead>
                     <tr>
-                        <th>producto</th><th>lanzamiento</th><th>precio</th>
+                        <th>producto</th>
+                        <th>ventas</th>
+                        <th>lanzamiento</th>
+                        <th>precio</th>
                     </tr>
                 </thead>
                 <tr>
-                    <td>buzos y hoodies</td><td>abril</td><td>$2.900</td>
+                    <td data-label="producto">buzos y hoodies</td>
+                    <td data-label="ventas">20</td>
+                    <td data-label="lanzamiento">abril</td>
+                    <td data-label="precio">$2.900</td>
                 </tr>
                 <tr>
-                    <td>joggins y jeans</td><td>junio</td><td>$2.250</td>
+                    <td data-label="producto">joggins y Jeans</td>
+                    <td data-label="ventas">15</td>
+                    <td data-label="lanzamiento">junio</td>
+                    <td data-label="precio">$2.250</td>
                 </tr>
                 <tr>
-                    <td>remeras y musculosas</td><td>septiembre</td><td>$1.250</td>
+                    <td data-label="producto">remeras y musculosas</td>
+                    <td data-label="ventas">10</td>
+                    <td data-label="lanzamiento">septiembre</td>
+                    <td data-label="precio">$1.900</td>
                 </tr>
+            
+               
             </table>
            
         </div>

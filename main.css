@@ -1,14 +1,16 @@
 *{
    margin: 0;
    padding: 0;
+   list-style: none;
+   text-decoration: none;
+   border: none;
+   outline: none;
  
 }
 
-.nav-responsive-ul {
-   display: none;
-}
 
-/*---IGUAL EN TODOS--*/
+
+/*-------------------------------------------------------IGUAL EN TODOS--------------------------------------*/
 
 
 
@@ -23,8 +25,18 @@
 
 }
 
+.menu-icon img{
+   width: 30px;
+   height: 30px;
+   border-radius: 2px;
+}
+
+.menu-icon, #check{
+   display: none;
+}
+
 h1{
-    font-family: 'Anton', sans-serif;
+   
     font-family: 'Kalam', cursive;
 }
 
@@ -50,6 +62,37 @@ a{
    text-decoration: none;
    color: rgb(15, 15, 15);
 }
+
+
+header{
+   width: 100%;
+   background-color: #dad6d6;
+
+   grid-area: header;
+   grid-gap: 200px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+main{
+   width: 100%;
+   padding-top: 100px;
+
+   grid-area: main;
+   grid-gap: 200px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+
+}
+
 
 footer {
 
@@ -141,12 +184,12 @@ footer {
        flex: 2 0px;
     }
  }
- /*---IGUAL EN TODOS--*/
+ /*-----------------------------------------------------IGUAL EN TODOS-----------------------------------------*/
 
 
 
 
-/*---ESTILADO DEL INDEX*/
+/*--------------------------------------------------------ESTILADO DEL INDEX----------------------------------*/
 
 
 .cabeza div{
@@ -225,10 +268,10 @@ footer {
    background: #2fb4cc;
    color: #fff;
 }
-/*----FIN DEL ESTILADO DEL INDEX*/
+/*-----------------------------------------------------FIN DEL ESTILADO DEL INDEX-----------------------------*/
 
 
-/*----COMIENZO DE ESTILADO DE NOTICIAS.HTML----*/
+/*---------------------------------------------------ESTILADO DE NOTICIAS.HTML--------------------------------*/
 
 
 span{
@@ -256,78 +299,110 @@ span{
 
 
 .estrenos{
-   background-color: #d8d8d8;
-   display: flex;
+ 
+   background-color: #f5f0f0;
+   display: block;
    width: 100%;
-   height: 400px;
+   height: 300px;
 }
 
-.lanzamientos{
-   font-family: 'Kalam', cursive;
-   padding: 15px;
+.main-container{
+   width: 100%;
+   max-width: 1000px;
+   padding-bottom: 50px;
+   margin: auto;
+  
 }
 
 
-table{
+.table{
    background-color: #ffffff;
-   text-align: left;
-   width: 500px;  
+   border: 1px solid rgb(148, 147, 147);
+   width: 100%;  
    border-collapse: collapse;
-   height: 200px;
-}
-th td{
-   padding: 20px;
-}
-
-thead{
-   background-color: #246355;
-   border-bottom: solid 5px #0f362d;
-   color: #fff;
-}
-tr:nth-child(even){
-   background-color: #dbdbdb;
+   margin: 0;
+   padding: 0;
+   table-layout: fixed;
 }
 
-tr:hover{
-   background-color: #369681;
-   color: white;
+.table caption{
+   font-size: 28px;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin: 8px 0px;
+}
+
+.table tr{
+   background-color: rgb(230, 225, 225);
+   border: 1px solid rgb(155, 154, 154);
+}
+
+.table th, .table td{
+   font-size: 16px;
+   padding: 8px;
+   text-align: center;
+}
+
+.table thead th{
+   background-color: rgb(201, 201, 201);
+   text-transform: uppercase;
+}
+
+.table tbody tr:hover{
+   background-color:  rgb(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover{
+   background-color: rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+   
+
+   .table{
+      border: 0px;
+   }
+   .table caption {
+      font-size:22px ;
+   }
+   .table thead {
+      display: none;
+   }
+   .table tr{
+      margin-bottom: 8px;
+      border-bottom: 4px solid #ddd;
+      display: block;
+   }
+   .table th, .table td{
+      font-size: 12px;
+   }
+   .table td{
+      display: block;
+      border-bottom: 1px solid #ddd;
+      text-align: right;
+   }
+   .table td:last-child{
+      border-bottom: 0px;
+   }
+   .table td::before{
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+   }
+
+
+
 }
 
 
-/*----FINALIZACION DEL ESTILADO DE NOTICIAS.HTML----*/
+/*---------------------------------------------------FINALIZACION DEL ESTILADO DE NOTICIAS.HTML---------------*/
 
 
 
-header{
-   width: 100%;
-   background-color: #d8d8d8;
-
-   grid-area: header;
-   grid-gap: 200px;
-
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
 
 
-}
-
-main{
-   width: 100%;
-   padding-top: 100px;
-
-   grid-area: main;
-   grid-gap: 200px;
-
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-
-}
-
-/*----ESTILADO DE HOODIES.HTML----*/
+/*------------------------------------------------ESTILADO DE HOODIES.HTML-----------------------------------*/
 
 .hoodies{
    background-color: #d8d8d8;
@@ -346,12 +421,6 @@ main{
    padding-bottom: 60px;
 }
 
-.hoodies img{
-   width: 300px;
-   height: 400px;
-  
-}
-
 .hoodies h3{
    max-width: 300px;
  
@@ -359,14 +428,19 @@ main{
    text-align: left;
    justify-content: left;
   
- 
- }
+}
 
- /*FINALIZACION DEL ESTILADO DE HOODIES.HTML*/
+.hoodies img{
+   width: 300px;
+   height: 400px;
+  
+}
+
+ /*-----------------------------------------FINALIZACION DEL ESTILADO DE HOODIES.HTML------------------------*/
 
 
 
-/*COMIENZO DE ESTILADO DE JOGGINS.HTML*/
+/*----------------------------------------COMIENZO DE ESTILADO DE JOGGINS.HTML-------------------------------*/
 
 .joggins{
    background-color: #d8d8d8;
@@ -401,11 +475,11 @@ main{
 }
 
 
-/*FINALIZACION DEL ESTILADO DE JOGGINS.HTML*/
+/*----------------------------------------FINALIZACION DEL ESTILADO DE JOGGINS.HTML---------------------------*/
 
 
 
-/*COMIENZO DE ESTILADO DE REMERAS.HTML*/
+/*-----------------------------------------COMIENZO DE ESTILADO DE REMERAS.HTML-------------------------------*/
 
 .remeras{
    background-color: #d8d8d8;
@@ -442,76 +516,21 @@ main{
  
 
  
-/*FINALIZACION DEL ESTILADO DE REMERAS.HTML*/
+/*---------------------------------------FINALIZACION DEL ESTILADO DE REMERAS.HTML----------------------------*/
 
 
+
+/*--------------------------------------media queris---------------------------------------------------------*/
 @media screen and (max-width: 320px){
-   .cabeza{
-      background-image: url("imagenes/mountains-g7954cb971_640.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      
-      height: 100px;
-      width: 100%;
-   }
    
-
    .contenedor{
       display: flex;
       flex-wrap: wrap;
    }
-  
-   
-   .titulito {
-      background-color: #f7e1e1;
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      
-   }
-   
-   .cabecera{
-      background-color: #f7e1e1;
-      padding: 5px;
-      text-align: left;
-      width: 100%;
-      
-   }
-   
-   
-   
-   .texto{
-      padding: 20px;
-      
-      margin: 10px;
-      display: block;
-      font-size: 10px;
-     
-   }
-   
+
   aside{
      display: none;
   }
-
-   
-   div img{
-      width: 100%;
-      height: 200px;
-   }
-
-   .hoodies{
-      display: flex;
-      justify-content: center;
-
-   }
-
-   .hoodies h3{
-      max-width: 100px;
-      display: flex;
-      justify-content: center;
-      font-size: 15px;
-    
-    }
    
     .joggins img{
       width: 200px;
@@ -558,6 +577,12 @@ main{
     
      text-align: left;
     }
+}
+
+@media screen and (max-width: 400px) {
+   aside{
+      display: none;
+   }
 }
 
 @media screen and (max-width: 600px){
@@ -609,8 +634,6 @@ main{
    
 }
 
-
-
 .texto{
    padding: 30px;
    margin: 10px;
@@ -618,41 +641,14 @@ main{
    font-size: 10px;
 }
 
-
-
 .estrenos{
-   background-color: #d8d8d8;
+   background-color: #fafafa;
    display: block;
-   padding: 30px;
+   padding:auto;
    width: 100%;
-   height: 400px;
+   height: 450px;
+   padding-bottom: 50px;
 }
-
-.lanzamientos{
-   font-family: 'Kalam', cursive;
-   padding: 15px;
-   display: flex;
-   justify-content: center;
-}
-
-
-table{
-   background-color: #ffffff;
-   text-align: left;
-   width: 500px;  
-   border-collapse: collapse;
-   height: 200px;
-}
-th td{
-   padding: 20px;
-}
-
-thead{
-   background-color: #246355;
-   border-bottom: solid 5px #0f362d;
-   color: #fff;
-}
-
 
 .hoodies img{
    width: 200px;

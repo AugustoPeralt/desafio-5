@@ -25,16 +25,6 @@
 
 }
 
-.menu-icon img{
-   width: 30px;
-   height: 30px;
-   border-radius: 2px;
-}
-
-.menu-icon, #check{
-   display: none;
-}
-
 h1{
    
     font-family: 'Kalam', cursive;
@@ -579,7 +569,7 @@ span{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
    aside{
       display: none;
    }

@@ -177,6 +177,7 @@ footer {
     width:100%;
    
     display:flex;
+    justify-content: centergi;
     background-color: #6a6a6a;
     
   
@@ -349,6 +350,7 @@ span{
 
 .hoodies h3{
    max-width: 300px;
+   font-size: 20px;
  
    display: flex;
    text-align: left;

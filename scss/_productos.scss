@@ -1,0 +1,90 @@
+.hoodies{
+    background-color: #d8d8d8;
+    
+    display: grid;
+    grid-gap: 100px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-bottom: 60px;
+
+    h3{
+        max-width: 300px;
+        font-size: 20px;
+    
+        display: flex;
+        text-align: left;
+        justify-content: left;
+    }
+
+    img{
+        width: 300px;
+        height: 400px;  
+    }
+}
+
+.joggins{
+    background-color: #d8d8d8;
+    
+    display: grid;
+    grid-gap: 100px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-bottom: 60px;
+
+    img{
+        width: 300px;
+        height: 400px;  
+    }
+
+    h3{
+        max-width: 300px;
+    
+        display: flex;
+        text-align: left;
+        justify-content: left;      
+    }
+}
+
+.remeras{
+    background-color:  #d8d8d8;
+    
+    display: grid;
+    grid-gap: 100px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-bottom: 60px;
+
+    img{
+        width: 300px;
+        height: 400px;  
+    }
+
+    h3{
+        max-width: 300px;
+    
+        display: flex;
+        text-align: left;
+        justify-content: left;    
+    }
+}

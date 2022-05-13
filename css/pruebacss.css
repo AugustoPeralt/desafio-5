@@ -37,69 +37,6 @@ main {
   align-items: center;
   justify-content: center; }
 
-footer {
-  display: -webkit- flex;
-  display: moz- flex;
-  display: ms- flex;
-  display: -o- flex;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 50px;
-  color: #fff;
-  background-color: #011c39; }
-  footer a:hover {
-    color: #fff; }
-
-.footer > * {
-  flex: 1 100%;
-  grid-area: footer; }
-
-.productoss, .noticiass, .adress {
-  font-weight: 600;
-  font-size: 17px; }
-
-.footer ul {
-  list-style: none;
-  padding-left: 0; }
-
-.footer li {
-  line-height: 2em; }
-
-.footer a {
-  text-decoration: none; }
-
-.footer-der {
-  display: -webkit- flex;
-  display: moz- flex;
-  display: ms- flex;
-  display: -o- flex;
-  display: flex;
-  flex-flow: row wrap; }
-
-.footer-der > * {
-  flex: 1 50%;
-  margin-right: 1.25em; }
-
-.box a {
-  color: #9e9797; }
-
-.footer-bottom {
-  text-align: center;
-  color: #999;
-  padding-top: 50px; }
-
-.redes a {
-  background-color: #364a62;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  margin-right: 10px; }
-
-.redes i {
-  color: #e7f2f4;
-  padding: 10px 12px;
-  font-size: 20px; }
-
 .cabeza {
   background-image: url("imagenes/mountains-g7954cb971_640.png");
   background-size: cover;
@@ -279,6 +216,69 @@ aside p {
     display: flex;
     text-align: left;
     justify-content: left; }
+
+footer {
+  display: -webkit- flex;
+  display: moz- flex;
+  display: ms- flex;
+  display: -o- flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color: #011c39; }
+  footer a:hover {
+    color: #fff; }
+
+.footer > * {
+  flex: 1 100%;
+  grid-area: footer; }
+
+.productoss, .noticiass, .adress {
+  font-weight: 600;
+  font-size: 17px; }
+
+.footer ul {
+  list-style: none;
+  padding-left: 0; }
+
+.footer li {
+  line-height: 2em; }
+
+.footer a {
+  text-decoration: none; }
+
+.footer-der {
+  display: -webkit- flex;
+  display: moz- flex;
+  display: ms- flex;
+  display: -o- flex;
+  display: flex;
+  flex-flow: row wrap; }
+
+.footer-der > * {
+  flex: 1 50%;
+  margin-right: 1.25em; }
+
+.box a {
+  color: #9e9797; }
+
+.footer-bottom {
+  text-align: center;
+  color: #999;
+  padding-top: 50px; }
+
+.redes a {
+  background-color: #364a62;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px; }
+
+.redes i {
+  color: #e7f2f4;
+  padding: 10px 12px;
+  font-size: 20px; }
 
 @media screen and (max-width: 320px) {
   .contenedor {

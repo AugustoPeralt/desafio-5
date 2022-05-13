@@ -1,0 +1,202 @@
+@media screen and (max-width: 320px){
+
+    .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+aside{
+    display: none;
+}
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .seccion{
+        h2{
+            text-transform: capitalize;
+        }
+    }
+
+    .seccion{
+        p{
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (min-width:600px){
+    .footer-der > * {
+    flex: 1;
+    }
+
+    .footer-der{
+    flex: 2 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /*--------index.html--------*/
+    
+    .cabeza{
+    background-image: url("imagenes/mountains-g7954cb971_640.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    }
+    
+    /*-----noticias.html-------*/
+    
+    .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .titulito{
+    background-color: #d6d5d5;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .cabecera{
+    background-color: #f0e9e9;
+    padding: 5px;
+    height: 300px;
+    width: 100%;
+    
+    }
+    
+    aside{
+    display: none;
+    }
+
+    .seccion{
+        h2{
+            font-size: 15px;
+        }
+    }
+
+    .texto{
+        padding: 30px;
+        margin: 10px;
+        display: block;
+        font-size: 10px;
+    }
+    
+    .estrenos{
+        background-color: #fafafa;
+        display: block;
+        padding:auto;
+        width: 100%;
+        height: 650px;
+    }
+    
+    .table{
+        border: 0px;
+
+        caption {
+            font-size:22px ;
+        }
+
+        thead {
+            display: none;
+        }
+
+        tr{
+            margin-bottom: 8px;
+            border-bottom: 4px solid #ddd;
+            display: block;
+        }
+
+        td{
+            font-size: 12px; 
+            display: block;
+            border-bottom: 1px solid #ddd;
+            text-align: right;
+
+            &:last-child{
+                border-bottom: 0px;
+            }
+
+            &::before{
+                content: attr(data-label);
+                font-weight: bold;
+                text-transform: uppercase;
+                float: left;
+            }  
+        }
+
+        th{
+            font-size: 12px; 
+        }
+    }
+
+    .hoodies{
+
+        display: grid;
+        grid-template-rows: max-content ;
+        padding: 5px;
+
+        img{
+            width: 200px;
+            height: 300px; 
+        }
+
+        h3{
+            max-width: 300px;
+            display: flex;
+            justify-content: right;
+        
+        text-align: left;
+        }
+    }
+
+    .joggins{
+
+        display: grid;
+        grid-template-rows: max-content ;
+        
+        padding: 5px;
+
+        img{
+            width: 200px;
+            height: 300px;  
+        }
+
+        h3{
+            max-width: 300px;
+            display: flex;
+            justify-content: left;
+        text-align: left;
+        }
+    } 
+
+    .remeras{
+
+        display: grid;
+        grid-template-rows: max-content ;
+        
+        padding: 5px;
+
+        img{
+            width: 200px;
+            height: 300px; 
+        }
+        
+        h3{
+            max-width: 300px;
+            display: flex;
+            justify-content: left;
+        
+        text-align: left;
+        }
+        }
+    }

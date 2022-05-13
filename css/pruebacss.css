@@ -199,7 +199,7 @@ aside p {
   margin-top: -50px; }
 
 .table {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #949393;
   width: 100%;
   border-collapse: collapse;
@@ -402,16 +402,22 @@ aside p {
 
 footer {
   color: #fff; }
-  footer a {
+  footer a:hover {
     color: #fff; }
 
 .card {
   background: #fff; }
+  .card:hover {
+    background: #2fb4cc;
+    color: #fff; }
 
-.hoodies {
-  background-color: #d8d8d8; }
+.table {
+  background-color: #fff; }
 
 .joggins {
+  background-color: #d8d8d8; }
+
+.hoodies {
   background-color: #d8d8d8; }
 
 .remeras {

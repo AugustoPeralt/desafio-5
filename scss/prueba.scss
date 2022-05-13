@@ -3,31 +3,45 @@
 
 //variables
 
+$colorUno:#fff;
+$colorDos:#d8d8d8;
 
-$color-2: #fff;
-$color-3: #d8d8d8;
 
-footer{
-    color: $color-2;
+
+
+
+footer {
+    color:$colorUno;
 
     a{
-        color: $color-2;
+        &:hover{
+            color:$colorUno;
+            }
     }
-}
+    }
 
-.card{
-    background: $color-2;
-}
+    .card{
+        background:$colorUno;
 
-.hoodies{
-    background-color: $color-3;
-}
+        &:hover{
+            background: #2fb4cc;
+            color:$colorUno;
+        }
+    }
+    
+    .table{
+        background-color:$colorUno;
+    }
 
-.joggins{
-    background-color: $color-3;
-}
 
-.remeras{
-    background-color: $color-3;
+    .joggins{
+        background-color: $colorDos;
+    }
 
-}
+    .hoodies{
+        background-color: $colorDos;
+    }
+
+    .remeras{
+        background-color: $colorDos;
+    }

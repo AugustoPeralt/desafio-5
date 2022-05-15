@@ -1,3 +1,14 @@
+.titulo{
+
+    h2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Indie Flower', cursive;
+    }
+
+}
+
 .hoodies{
     background-color: #d8d8d8;
     
@@ -11,6 +22,7 @@
 
     display: flex;
     flex-wrap: wrap;
+    
 
     padding-bottom: 60px;
 
@@ -19,8 +31,14 @@
         font-size: 20px;
     
         display: flex;
-        text-align: left;
-        justify-content: left;
+        text-align: center;
+        justify-content: center;
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     img{
@@ -28,6 +46,18 @@
         height: 400px;  
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .joggins{
     background-color: #d8d8d8;

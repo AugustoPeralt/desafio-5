@@ -36,16 +36,6 @@ header {
   align-items: center;
   justify-content: center; }
 
-main {
-  width: 100%;
-  padding-top: 100px;
-  grid-area: main;
-  grid-gap: 200px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
 .cabeza {
   background-image: url("imagenes/mountains-g7954cb971_640.png");
   background-size: cover;
@@ -66,7 +56,7 @@ main {
   justify-content: centergi;
   background-color: #6a6a6a; }
 
-.card {
+.card-index {
   width: 400px;
   margin: 40px;
   border-radius: 6px;
@@ -75,20 +65,20 @@ main {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease; }
-  .card:hover {
+  .card-index:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%); }
-  .card img {
+  .card-index img {
     width: 100%;
     height: 100%; }
-  .card .contenido {
+  .card-index .contenido {
     padding: 15px;
     text-align: center; }
-    .card .contenido p {
+    .card-index .contenido p {
       line-height: 1.5;
       color: #6a6a6a;
       padding: 10px; }
-    .card .contenido a {
+    .card-index .contenido a {
       text-decoration: none;
       display: inline-block;
       padding: 10px;
@@ -97,11 +87,11 @@ main {
       border: 1px solid #2fb4cc;
       border-radius: 4px;
       transition: all 400ms ease; }
-      .card .contenido a:hover {
+      .card-index .contenido a:hover {
         background: #2fb4cc;
         color: #fff; }
 
-span {
+.span {
   color: red;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
@@ -174,67 +164,74 @@ aside p {
   .table tbody td:hover {
     background-color: #0000004d; }
 
+.cuerpo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  padding: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 .titulo h2 {
   text-align: center;
   display: flex;
   justify-content: center;
   font-family: 'Indie Flower', cursive; }
 
-.hoodies {
-  background-color: #d8d8d8;
-  display: grid;
-  grid-gap: 100px;
-  grid-template-areas: "nav" "header" "main" "footer";
+.productos {
+  max-width: 280px;
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 60px; }
-  .hoodies h3 {
-    max-width: 300px;
-    font-size: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center; }
-  .hoodies p {
-    display: flex;
-    justify-content: center;
-    text-align: center; }
-  .hoodies img {
-    width: 300px;
-    height: 400px; }
+  flex-flow: column;
+  border-radius: 6px;
+  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
+  background-color: white;
+  cursor: pointer; }
+  .productos:hover {
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2); }
+    .productos:hover .calificacion, .productos:hover .ubicacion {
+      opacity: 1; }
+  .productos > img {
+    width: 100%;
+    object-fit: cover; }
 
-.joggins {
-  background-color: #d8d8d8;
-  display: grid;
-  grid-gap: 100px;
-  grid-template-areas: "nav" "header" "main" "footer";
+.informacion {
+  border-top: 1px solid #e6e6e6;
+  padding: 1em;
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 60px; }
-  .joggins img {
-    width: 300px;
-    height: 400px; }
-  .joggins h3 {
-    max-width: 300px;
+  flex-flow: column; }
+  .informacion * + * {
+    margin-bottom: 0.5em; }
+  .informacion .tipo-envio {
+    background-color: #3483fa;
+    color: white;
+    font-weight: 600;
+    max-width: max-content;
+    padding: 0 0.2em;
+    border-radius: 3px; }
+  .informacion .precio {
+    font-size: 1.5em; }
+  .informacion .costo-envio {
+    color: #00a650; }
+  .informacion .descripcion, .informacion .ubicacion {
+    font-weight: 300; }
+  .informacion .costo-envio, .informacion .descripcion, .informacion .ubicacion {
+    font-size: 0.9em; }
+  .informacion .calificacion, .informacion .ubicacion {
+    transition-duration: 0,3s;
+    transition-property: opacity;
+    opacity: 0; }
+  .informacion .calificacion {
     display: flex;
-    text-align: left;
-    justify-content: left; }
-
-.remeras {
-  background-color: #d8d8d8;
-  display: grid;
-  grid-gap: 100px;
-  grid-template-areas: "nav" "header" "main" "footer";
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 60px; }
-  .remeras img {
-    width: 300px;
-    height: 400px; }
-  .remeras h3 {
-    max-width: 300px;
-    display: flex;
-    text-align: left;
-    justify-content: left; }
+    flex-flow: row nowrap;
+    align-items: flex-end; }
+  .informacion .calificacion > * {
+    margin: 0; }
+  .informacion .tipo-envio, .informacion .calificacion {
+    font-size: 0.8em; }
+  .informacion .calificacion > span:first-child {
+    color: #3483fa; }
 
 footer {
   display: -webkit- flex;
@@ -422,12 +419,6 @@ footer {
 footer {
   color: #fff; }
   footer a:hover {
-    color: #fff; }
-
-.card {
-  background: #fff; }
-  .card:hover {
-    background: #2fb4cc;
     color: #fff; }
 
 .table {

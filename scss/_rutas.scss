@@ -63,16 +63,7 @@ a{
     justify-content: center;
 }
 
-main{
-    width: 100%;
-    padding-top: 100px; 
-    grid-area: main;
-    grid-gap: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    }
+
 
 
 .cabeza{
@@ -101,7 +92,7 @@ main{
 
 }
 
-.card{
+.card-index{
     width: 400px;
     margin: 40px;
     border-radius: 6px;
@@ -151,7 +142,7 @@ main{
 
 
 
-span{
+.span{
     color: red;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

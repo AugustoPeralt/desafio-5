@@ -1,3 +1,18 @@
+.cuerpo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
 .titulo{
 
     h2{
@@ -9,112 +24,90 @@
 
 }
 
-.hoodies{
-    background-color: #d8d8d8;
-    
-    display: grid;
-    grid-gap: 100px;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "main"
-    "footer";
-
+.productos{
+    max-width: 280px;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-flow: column;
+    border-radius: 6px;
+    box-shadow: 0 0 0.1em rgba(0,0,0,0.2) ;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
 
-    padding-bottom: 60px;
+    &:hover{
+        box-shadow:0 0 1.5em rgba(0,0,0,0.2) ;
 
-    h3{
-        max-width: 300px;
-        font-size: 20px;
-    
-        display: flex;
-        text-align: center;
-        justify-content: center;
+        .calificacion, .ubicacion{
+            opacity: 1;
+        }
+
     }
 
-    p{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
 
-    img{
-        width: 300px;
-        height: 400px;  
+
+    > img{
+        width:100%;
+        object-fit: cover;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.joggins{
-    background-color: #d8d8d8;
-    
-    display: grid;
-    grid-gap: 100px;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "main"
-    "footer";
-
+.informacion{
+    border-top: 1px solid rgb(230,230,230);
+    padding: 1em;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column;
 
-    padding-bottom: 60px;
-
-    img{
-        width: 300px;
-        height: 400px;  
+    * + *{
+        margin-bottom: 0.5em;
     }
 
-    h3{
-        max-width: 300px;
-    
+    .tipo-envio{
+        background-color: rgb(52,131,250);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        max-width: max-content;
+        padding: 0 0.2em;
+        border-radius: 3px;
+    }
+
+    .precio{
+        font-size: 1.5em;
+    }
+
+    .costo-envio{
+        color: rgb(0,166,80);
+    }
+
+    .descripcion, .ubicacion{
+        font-weight: 300;
+    }
+
+    .costo-envio, .descripcion, .ubicacion{
+        font-size: 0.9em;
+    } 
+
+    .calificacion, .ubicacion{
+        transition-duration:0,3s;
+        transition-property: opacity;
+        opacity: 0;
+        
+    }
+
+    .calificacion{
         display: flex;
-        text-align: left;
-        justify-content: left;      
-    }
-}
-
-.remeras{
-    background-color:  #d8d8d8;
-    
-    display: grid;
-    grid-gap: 100px;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "main"
-    "footer";
-
-    display: flex;
-    flex-wrap: wrap;
-
-    padding-bottom: 60px;
-
-    img{
-        width: 300px;
-        height: 400px;  
+        flex-flow: row nowrap;
+        align-items: flex-end;
     }
 
-    h3{
-        max-width: 300px;
-    
-        display: flex;
-        text-align: left;
-        justify-content: left;    
+    .calificacion > * {
+        margin: 0;
+    }
+
+
+    .tipo-envio, .calificacion{
+        font-size: 0.8em;
+    } 
+
+    .calificacion > span:first-child{
+    color: rgb(52,131,250); 
     }
 }

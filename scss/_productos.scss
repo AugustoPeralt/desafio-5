@@ -1,4 +1,14 @@
+
+.head-productos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(245, 237, 235);
+}
+
+
 .cuerpo{
+    background-color: rgb(240, 221, 221);
     display: grid;
     grid-template-columns: repeat(auto-fit, 280px);
     grid-template-rows: 1fr;

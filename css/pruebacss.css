@@ -20,35 +20,11 @@ nav img {
   color: black;
   font-size: 20px; }
   .d-flex i:hover {
-    color: #fff; }
+    color: #868686; }
 
 a {
   text-decoration: none;
   color: #0f0f0f; }
-
-header {
-  width: 100%;
-  background-color: #dad6d6;
-  grid-area: header;
-  grid-gap: 200px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.cabeza {
-  background-image: url("imagenes/mountains-g7954cb971_640.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 15px;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  align-items: center; }
-  .cabeza div {
-    color: #070707;
-    font-family: 'Kalam', cursive;
-    text-align: center; }
 
 .contenedor {
   width: 100%;
@@ -164,7 +140,76 @@ aside p {
   .table tbody td:hover {
     background-color: #0000004d; }
 
+.gridContainerFormulario {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-area: "Formulario"; }
+  .gridContainerFormulario .sectionFormulario {
+    background-color: #e7e0e0;
+    height: 100%; }
+    .gridContainerFormulario .sectionFormulario h2 {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+    .gridContainerFormulario .sectionFormulario .tituloFormulario {
+      font-size: 35px;
+      margin-top: 100px; }
+    .gridContainerFormulario .sectionFormulario div {
+      width: 500px;
+      background-color: lightgray;
+      padding: 30px;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border-radius: 4px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #3d3d3d; }
+      .gridContainerFormulario .sectionFormulario div h4 {
+        font-size: 22px;
+        margin-bottom: 20px; }
+      .gridContainerFormulario .sectionFormulario div .controls {
+        width: 96%;
+        background-color: #fdfbfb;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #0a0a0a;
+        font-size: 18px; }
+      .gridContainerFormulario .sectionFormulario div textarea {
+        width: 100%; }
+      .gridContainerFormulario .sectionFormulario div p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px; }
+      .gridContainerFormulario .sectionFormulario div a {
+        color: #fcfcfa;
+        text-decoration: none; }
+        .gridContainerFormulario .sectionFormulario div a:hover {
+          color: #030303;
+          text-decoration: underline; }
+      .gridContainerFormulario .sectionFormulario div .buttons {
+        width: 100%;
+        background: #8b8b8b;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        transition: all 1s; }
+        .gridContainerFormulario .sectionFormulario div .buttons:hover {
+          background: #0f0f0f; }
+
+.head-productos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f5edeb; }
+
 .cuerpo {
+  background-color: #f0dddd;
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
   grid-template-rows: 1fr;
@@ -309,6 +354,12 @@ footer {
   .seccion p {
     font-size: 10px; } }
 
+@media screen and (max-width: 500px) {
+  .seccion h2 {
+    text-transform: capitalize; }
+  .seccion p {
+    font-size: 12px; } }
+
 @media screen and (min-width: 600px) {
   .footer-der > * {
     flex: 1; }
@@ -316,16 +367,6 @@ footer {
     flex: 2 0px; } }
 
 @media screen and (max-width: 600px) {
-  /*--------index.html--------*/
-  .cabeza {
-    background-image: url("imagenes/mountains-g7954cb971_640.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 15px;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center; }
   /*-----noticias.html-------*/
   .contenedor {
     display: flex;
@@ -379,42 +420,19 @@ footer {
         float: left; }
     .table th {
       font-size: 12px; }
-  .hoodies {
-    display: grid;
-    grid-template-rows: max-content;
-    padding: 5px; }
-    .hoodies img {
-      width: 200px;
-      height: 300px; }
-    .hoodies h3 {
-      max-width: 300px;
-      display: flex;
-      justify-content: right;
-      text-align: left; }
-  .joggins {
-    display: grid;
-    grid-template-rows: max-content;
-    padding: 5px; }
-    .joggins img {
-      width: 200px;
-      height: 300px; }
-    .joggins h3 {
-      max-width: 300px;
-      display: flex;
-      justify-content: left;
-      text-align: left; }
-  .remeras {
-    display: grid;
-    grid-template-rows: max-content;
-    padding: 5px; }
-    .remeras img {
-      width: 200px;
-      height: 300px; }
-    .remeras h3 {
-      max-width: 300px;
-      display: flex;
-      justify-content: left;
-      text-align: left; } }
+  .gridContainerFormulario .sectionFormulario div {
+    width: 300px; }
+  .tituloFormulario {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 1000px) {
+  .gridContainerFormulario .sectionFormulario div {
+    width: 400px; } }
 
 footer {
   color: #fff; }

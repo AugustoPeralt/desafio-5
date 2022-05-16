@@ -17,11 +17,21 @@ aside{
         h2{
             text-transform: capitalize;
         }
-    }
 
-    .seccion{
         p{
             font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .seccion{
+        h2{
+            text-transform: capitalize;
+        }
+
+        p{
+            font-size: 12px;
         }
     }
 }
@@ -38,19 +48,6 @@ aside{
 
 @media screen and (max-width: 600px){
 
-    /*--------index.html--------*/
-    
-    .cabeza{
-    background-image: url("imagenes/mountains-g7954cb971_640.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 15px;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    
-    }
     
     /*-----noticias.html-------*/
     
@@ -139,64 +136,24 @@ aside{
         }
     }
 
-    .hoodies{
+    .gridContainerFormulario{
 
-        display: grid;
-        grid-template-rows: max-content ;
-        padding: 5px;
-
-        img{
-            width: 200px;
-            height: 300px; 
-        }
-
-        h3{
-            max-width: 300px;
-            display: flex;
-            justify-content: right;
-        
-        text-align: left;
-        }
+        .sectionFormulario div{
+            width: 300px;}
     }
 
-    .joggins{
+    .tituloFormulario{
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }    
+}
 
-        display: grid;
-        grid-template-rows: max-content ;
-        
-        padding: 5px;
-
-        img{
-            width: 200px;
-            height: 300px;  
-        }
-
-        h3{
-            max-width: 300px;
-            display: flex;
-            justify-content: left;
-        text-align: left;
-        }
-    } 
-
-    .remeras{
-
-        display: grid;
-        grid-template-rows: max-content ;
-        
-        padding: 5px;
-
-        img{
-            width: 200px;
-            height: 300px; 
-        }
-        
-        h3{
-            max-width: 300px;
-            display: flex;
-            justify-content: left;
-        
-        text-align: left;
-        }
-        }
+@media screen and (max-width: 1000px) {
+    .gridContainerFormulario .sectionFormulario div{
+    width: 400px;
     }
+}

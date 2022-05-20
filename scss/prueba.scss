@@ -39,3 +39,31 @@ footer {
     .remeras{
         background-color: $colorDos;
     }
+
+    // mapas
+
+    $redes: (
+        twitter: #0077ff,
+        facebook: #0c3286,
+        instagram: #e98db3,
+    );
+
+    @each $red, $color in $redes {
+        .red-#{$red} {
+            color: $color;
+        }
+        
+    }
+
+    // mixin
+    @mixin size ($alto, $ancho, $espaciado) {
+        height:$alto;
+        width:$ancho;
+        margin:$espaciado;
+    }
+
+    .redes{
+        a{
+            @include size(40px,40px,0)
+        }
+    }

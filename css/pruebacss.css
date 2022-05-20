@@ -33,7 +33,7 @@ a {
   background-color: #6a6a6a; }
 
 .card-index {
-  width: 400px;
+  width: 100%;
   margin: 40px;
   border-radius: 6px;
   overflow: hidden;
@@ -331,13 +331,10 @@ footer {
 
 .redes a {
   background-color: #364a62;
-  width: 40px;
-  height: 40px;
   display: inline-block;
   margin-right: 10px; }
 
 .redes i {
-  color: #e7f2f4;
   padding: 10px 12px;
   font-size: 20px; }
 
@@ -450,3 +447,17 @@ footer {
 
 .remeras {
   background-color: #d8d8d8; }
+
+.red-twitter {
+  color: #0077ff; }
+
+.red-facebook {
+  color: #0c3286; }
+
+.red-instagram {
+  color: #e98db3; }
+
+.redes a {
+  height: 40px;
+  width: 40px;
+  margin: 0; }

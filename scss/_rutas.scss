@@ -21,8 +21,7 @@ nav{
     }
 
     .bg-light{
-    
-        font-family: 'Anton', sans-serif;
+        font-family: 'Kalam', cursive;
     }
 
 .d-flex{
@@ -42,11 +41,13 @@ a{
     color: rgb(15, 15, 15);
     }
 
+//index.html------------------------------------------------------------
+
 
 .contenedor{
     width:100%;
     display:flex;
-    justify-content: centergi;
+    justify-content: center;
     background-color: #6a6a6a;
 
 }
@@ -100,11 +101,39 @@ a{
 }
 
 
+.metodos-pago{
+    background-color: rgb(196, 192, 192);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 
-.span{
-    color: red;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    
+    
+
+    h3{
+        display: flex;
+        justify-content: center;
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+    }
+
+    i{
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+    }
 }
+
+
+
+
+//noticias.html-----------------------------------------
 
 .titulito{
     background-color: #d6d3d3;
@@ -114,32 +143,23 @@ a{
 
 .cabecera{
     background-color: #ece9e9;
-    margin-top: -10px;
     padding: 15px;
     height: 450px;
     width: 100%;  
 }
 
-.seccion{
+.texto{
 
-    h2{
-        font-size: 20px;
-        text-transform: uppercase;
-    }
+    display: flex;
+    justify-content: center;
 
     p{
-        font-size: 15px;
-    }
-}
-
-aside{
-    h2{
         font-size: 20px;
-        text-transform: uppercase;
+        max-width: 500px;
     }
 
-    p{
-        font-size: 15px;
+    img{
+        max-width: 500px;;
     }
 }
 

@@ -14,7 +14,7 @@ nav img {
   border-radius: 10px; }
 
 .bg-light {
-  font-family: 'Anton', sans-serif; }
+  font-family: 'Kalam', cursive; }
 
 .d-flex i {
   color: black;
@@ -29,7 +29,7 @@ a {
 .contenedor {
   width: 100%;
   display: flex;
-  justify-content: centergi;
+  justify-content: center;
   background-color: #6a6a6a; }
 
 .card-index {
@@ -67,9 +67,24 @@ a {
         background: #2fb4cc;
         color: #fff; }
 
-.span {
-  color: red;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+.metodos-pago {
+  background-color: #c4c0c0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 50px; }
+  .metodos-pago h3 {
+    display: flex;
+    justify-content: center; }
+  .metodos-pago p {
+    display: flex;
+    justify-content: center;
+    max-width: 400px; }
+  .metodos-pago i {
+    font-size: 60px;
+    display: flex;
+    justify-content: center; }
 
 .titulito {
   background-color: #d6d3d3;
@@ -78,24 +93,18 @@ a {
 
 .cabecera {
   background-color: #ece9e9;
-  margin-top: -10px;
   padding: 15px;
   height: 450px;
   width: 100%; }
 
-.seccion h2 {
-  font-size: 20px;
-  text-transform: uppercase; }
-
-.seccion p {
-  font-size: 15px; }
-
-aside h2 {
-  font-size: 20px;
-  text-transform: uppercase; }
-
-aside p {
-  font-size: 15px; }
+.texto {
+  display: flex;
+  justify-content: center; }
+  .texto p {
+    font-size: 20px;
+    max-width: 500px; }
+  .texto img {
+    max-width: 500px; }
 
 .estrenos {
   background-color: #ece9e9;
@@ -429,7 +438,10 @@ footer {
 
 @media screen and (max-width: 1000px) {
   .gridContainerFormulario .sectionFormulario div {
-    width: 400px; } }
+    width: 400px; }
+  .metodos-pago {
+    flex-wrap: wrap;
+    height: auto; } }
 
 footer {
   color: #fff; }

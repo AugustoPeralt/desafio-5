@@ -26,6 +26,10 @@ a {
   text-decoration: none;
   color: #0f0f0f; }
 
+.carousel-item {
+  width: 100%;
+  max-height: 200; }
+
 .contenedor {
   width: 100%;
   display: flex;
@@ -74,17 +78,20 @@ a {
   display: flex;
   justify-content: center;
   padding: 50px; }
-  .metodos-pago h3 {
-    display: flex;
-    justify-content: center; }
-  .metodos-pago p {
-    display: flex;
-    justify-content: center;
-    max-width: 400px; }
-  .metodos-pago i {
-    font-size: 60px;
-    display: flex;
-    justify-content: center; }
+  .metodos-pago div {
+    text-align: center; }
+    .metodos-pago div h3 {
+      display: flex;
+      justify-content: center; }
+    .metodos-pago div p {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      max-width: 400px; }
+    .metodos-pago div i {
+      font-size: 60px;
+      display: flex;
+      justify-content: center; }
 
 .titulito {
   background-color: #d6d3d3;
@@ -338,14 +345,16 @@ footer {
   color: #999;
   padding-top: 50px; }
 
-.redes a {
-  background-color: #364a62;
-  display: inline-block;
-  margin-right: 10px; }
-
-.redes i {
-  padding: 10px 12px;
-  font-size: 20px; }
+.redes {
+  display: flex;
+  justify-content: space-between; }
+  .redes a {
+    background-color: #364a62;
+    display: inline-block;
+    margin-right: 10px; }
+  .redes i {
+    padding: 10px 12px;
+    font-size: 20px; }
 
 @media screen and (max-width: 320px) {
   .contenedor {

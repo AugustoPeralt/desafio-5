@@ -68,6 +68,8 @@ footer {
 }
 
 .redes{
+    display: flex;
+    justify-content: space-between;
     a{
         background-color: #364a62;
         display: inline-block;

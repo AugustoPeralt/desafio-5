@@ -26,9 +26,14 @@ a {
   text-decoration: none;
   color: #0f0f0f; }
 
-.carousel-item {
+.navegador {
+  background-color: #cf9e9e; }
+  .navegador .cambioColor {
+    color: #cc2fc4; }
+
+.foto-index img {
   width: 100%;
-  max-height: 200; }
+  height: 500px; }
 
 .contenedor {
   width: 100%;

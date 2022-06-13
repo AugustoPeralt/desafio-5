@@ -11,30 +11,19 @@ aside{
     
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width:500px){
 
-    .seccion{
-        h2{
-            text-transform: capitalize;
+    .texto{
+        img{
+            display: none;
         }
+    }
 
-        p{
-            font-size: 10px;
-        }
+    .sorteos{
+        padding-bottom: 200px;
     }
 }
 
-@media screen and (max-width: 500px){
-    .seccion{
-        h2{
-            text-transform: capitalize;
-        }
-
-        p{
-            font-size: 12px;
-        }
-    }
-}
 
 @media screen and (min-width:600px){
     .footer-der > * {
@@ -66,19 +55,24 @@ aside{
     .cabecera{
     background-color: #f0e9e9;
     padding: 5px;
-    height: 300px;
-    width: 100%;
-    
+    height: 600px;
+    width: 100%;   
+    text-align: center;
+
+    .texto{
+        img{
+            display: none;
+        }
     }
-    
-    aside{
-    display: none;
     }
 
-    .seccion{
-        h2{
-            font-size: 15px;
-        }
+    .sorteos{
+        height: 400px;
+        padding-top: 150px;
+    }
+
+    .fotos-sorteo{
+        height: 800px;
     }
 
     .texto{
@@ -152,6 +146,42 @@ aside{
     }    
 }
 
+@media screen and (max-width:700px) {
+
+    .cabecera{
+        height: 300px;
+        .texto{
+            img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 900px) {
+    .fotos-sorteo{
+        height: 500px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .sorteos{
+        div{
+            p{
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .estrenos{
+        padding-top: 150px;
+    }
+}
+
+
+
 @media screen and (max-width: 1000px) {
     .gridContainerFormulario .sectionFormulario div{
     width: 400px;
@@ -160,5 +190,20 @@ aside{
     .metodos-pago{
         flex-wrap: wrap;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .fotos-sorteo{ 
+        img{
+            width: 300px;
+            height: 200px;
+    
+            &:hover{
+                transition: 0,5;
+                height:220px;
+                width: 320px;
+            }
+        }
     }
 }

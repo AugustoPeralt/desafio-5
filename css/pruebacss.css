@@ -449,6 +449,8 @@ footer {
   .sorteos {
     height: 400px;
     padding-top: 150px; }
+    .sorteos div p {
+      font-size: 15px; }
   .fotos-sorteo {
     height: 800px; }
   .texto {

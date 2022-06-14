@@ -37,36 +37,6 @@ aside{
         }
     }
 
-
-    .gridContainerFormulario{
-        height:100%;
-        width: 100%;
-    
-    
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-area:  "Formulario";
-    
-        .sectionFormulario{
-            background-color: rgb(231, 224, 224);
-            height: 100%;
-    
-    
-            div{
-                width: 400px;
-                background-color: rgb(211, 211, 211);
-                padding: 30px;
-                margin: auto;
-                margin-top: 50px;
-                margin-bottom: 50px;
-                border-radius: 4px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                color: rgb(61, 61, 61); 
-            }
-        }
-    }
-
 }
 
 @media screen and (max-width:500px){
@@ -209,23 +179,6 @@ aside{
         }
     }
 
-    .gridContainerFormulario{
-
-        height:100%;
-
-        .sectionFormulario div{
-            width: 300px;
-}
-    }
-
-    .tituloFormulario{
-        font-size: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }    
 }
 
 @media screen and (max-width:700px) {
@@ -287,9 +240,6 @@ aside{
 
 @media screen and (max-width: 1000px) {
     
-    .gridContainerFormulario .sectionFormulario div{
-    width: 400px;
-    }
 
     .metodos-pago{
         flex-wrap: wrap;

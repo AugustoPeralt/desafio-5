@@ -433,27 +433,7 @@ footer {
     height: 300px; }
     .foto-index div h1 {
       margin-top: 230px;
-      font-size: 18px; }
-  .gridContainerFormulario {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-area: "Formulario"; }
-    .gridContainerFormulario .sectionFormulario {
-      background-color: #e7e0e0;
-      height: 100%; }
-      .gridContainerFormulario .sectionFormulario div {
-        width: 400px;
-        background-color: lightgray;
-        padding: 30px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        border-radius: 4px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #3d3d3d; } }
+      font-size: 18px; } }
 
 @media screen and (max-width: 500px) {
   .foto-index {
@@ -533,18 +513,7 @@ footer {
         text-transform: uppercase;
         float: left; }
     .table th {
-      font-size: 12px; }
-  .gridContainerFormulario {
-    height: 100%; }
-    .gridContainerFormulario .sectionFormulario div {
-      width: 300px; }
-  .tituloFormulario {
-    font-size: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; } }
+      font-size: 12px; } }
 
 @media screen and (max-width: 700px) {
   .cabecera {
@@ -577,8 +546,6 @@ footer {
     padding-top: 150px; } }
 
 @media screen and (max-width: 1000px) {
-  .gridContainerFormulario .sectionFormulario div {
-    width: 400px; }
   .metodos-pago {
     flex-wrap: wrap;
     height: auto; } }
